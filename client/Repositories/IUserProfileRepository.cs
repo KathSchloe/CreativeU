@@ -6,6 +6,7 @@ namespace CreativeU.Repositories
         void Add(UserProfile userProfile);
         void Delete(int id);
         List<UserProfile> GetAll();
+        UserProfile GetByEmail(string email);
         UserProfile GetById(int id);
         void Update(UserProfile userProfile);
     }

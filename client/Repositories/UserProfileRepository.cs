@@ -39,6 +39,41 @@ namespace CreativeU.Repositories
                 }
             }
         }
+        public UserProfile GetByEmail(string email)
+        {
+            using (var conn = Connection)
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        SELECT Id, DisplayName as Name, Email, ImageLocation, CreateDateTime AS DateCreated FROM UserProfile
+                         WHERE Email = @email";
+
+                    DbUtils.AddParameter(cmd, "@email", email);
+
+                    UserProfile userProfile = null;
+
+                    var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+
+                        userProfile = new UserProfile()
+                        {
+                            Id = DbUtils.GetInt(reader, "Id"),
+                            Name = DbUtils.GetString(reader, "Name"),
+                            Email = DbUtils.GetString(reader, "Email"),
+                            DateCreated = DbUtils.GetDateTime(reader, "DateCreated"),
+                            ImageUrl = DbUtils.GetString(reader, "ImageLocation"),
+                        };
+
+                    }
+                    reader.Close();
+
+                    return userProfile;
+                }
+            }
+        }
         public UserProfile GetById(int id)
         {
             using (var conn = Connection)
