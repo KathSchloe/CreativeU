@@ -3,13 +3,13 @@
     justify-content: center;    /* Center horizontally */
     align-items: center;        /* Center vertically */
     height: 100vh;             /* Full height of the viewport */
-    padding-left: 700px;
+    padding-left: 500px;
     font-family: 'Domine', serif;
 }
 
 body {
     background-image: url('https://wallpapers.com/images/hd/candles-cameras-and-cars-beige-aesthetic-desktop-cqe0088awdjyzavx.jpg');
-  width: 212vh;
+  width: 222vh;
 }
 
   

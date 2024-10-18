@@ -1,3 +1,9 @@
 .gray-title {
     color: rgb(82, 80, 80);
 }
+
+.navbar {
+    background-color: white; /* Make the navbar background transparent */
+    color: #5c5b5b; /* Text color in the navbar */
+   
+}

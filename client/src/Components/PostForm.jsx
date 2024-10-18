@@ -71,6 +71,9 @@ export const PostForm = () => {
               <Button color="green" onClick={submit} className="btn-lg">
                 SUBMIT
               </Button>
+              <Button color="green" onClick={() => navigate('/')} className="btn-lg">
+  BACK
+</Button>
             </div>
           </CardBody>
         </Card>

@@ -1,7 +1,8 @@
 /* THIS CSS FILE IS ACTUALLY FOR POSTLIST.JSX!!!!! */
 .postform {
   background-image: url('https://i.etsystatic.com/5618592/r/il/cbc398/4904703460/il_fullxfull.4904703460_dj73.jpg');
-  width: 212vh;
+  width: 220vh;
+
 }
 
 
@@ -11,12 +12,13 @@ h1 {
 }
 
 .navbar {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #5c5b5b; /* Text color in the navbar, change as needed */
 }
 
 /* If the navbar has links, you might want to style them too */
 .navbar a {
+  
   color: #5c5b5b; /* Link color in the navbar */
   font-family: 'Domine', serif;
 }
@@ -37,7 +39,7 @@ body {
     max-width: 100%; /* Set max-width to 100% to use full page width */
     margin: 20px; /* Margin for spacing around the card */
     padding: 20px; /* Padding for internal spacing */
-    background-color: aqua; /* Set card background color to aqua */
+    background-color: rgb(240, 240, 233); /* Set card background color to aqua */
     border: 1px solid #ddd; /* Light border for card */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Default shadow */
