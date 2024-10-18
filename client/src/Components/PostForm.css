@@ -1,0 +1,79 @@
+/* THIS CSS FILE IS ACTUALLY FOR POSTLIST.JSX!!!!! */
+.postform {
+  background-image: url('https://i.etsystatic.com/5618592/r/il/cbc398/4904703460/il_fullxfull.4904703460_dj73.jpg');
+  width: 220vh;
+
+}
+
+
+h1 {
+  color: #5c5b5b; /* Dark gray color for the h1 */
+  font-family: 'Domine', serif;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  color: #5c5b5b; /* Text color in the navbar, change as needed */
+}
+
+/* If the navbar has links, you might want to style them too */
+.navbar a {
+  
+  color: #5c5b5b; /* Link color in the navbar */
+  font-family: 'Domine', serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a clear, readable font */
+  }
+  
+  .container {
+    padding: 0 15px; /* Add padding to the container */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for shadow */
+    width: 700px; /* Full width for responsiveness */
+    max-width: 100%; /* Set max-width to 100% to use full page width */
+    margin: 20px; /* Margin for spacing around the card */
+    padding: 20px; /* Padding for internal spacing */
+    background-color: rgb(240, 240, 233); /* Set card background color to aqua */
+    border: 1px solid #ddd; /* Light border for card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Default shadow */
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .left-section {
+    flex: 1; /* Allow the left section to take available space */
+  }
+  
+  .right-section {
+    flex: 0 0 250px; /* Fixed width for the right section */
+    margin-left: 20px; /* Space between the sections */
+  }
+  
+  label {
+    font-weight: bold; /* Make labels more prominent */
+    margin-bottom: 5px; /* Space between label and input */
+  }
+  
+  .input {
+    font-size: 1.1rem; /* Slightly larger font for inputs */
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
