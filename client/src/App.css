@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+/* index.css or App.css */
+body {
+  font-family: 'Domine', serif; /* Apply Domine font globally */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Domine', serif; /* Apply Domine font to headings */
+}
+
+/* Additional styles for other elements can go here */

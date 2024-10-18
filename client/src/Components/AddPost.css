@@ -1,0 +1,31 @@
+.container.pt-4 {
+    display: flex;              /* Use Flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    height: 100vh;             /* Full height of the viewport */
+    padding-left: 700px;
+    font-family: 'Domine', serif;
+}
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/candles-cameras-and-cars-beige-aesthetic-desktop-cqe0088awdjyzavx.jpg');
+  width: 212vh;
+}
+
+  
+  
+  h1 {
+    color: #5c5b5b; /* Dark gray color for the h1 */
+    font-family: 'Domine', serif;
+  }
+  
+  .navbar {
+    
+    color: #5c5b5b; /* Text color in the navbar, change as needed */
+  }
+  
+  /* If the navbar has links, you might want to style them too */
+  .navbar a {
+    color: #5c5b5b; /* Link color in the navbar */
+    font-family: 'Domine', serif;
+  }

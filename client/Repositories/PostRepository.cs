@@ -105,7 +105,7 @@ namespace CreativeU.Repositories
                         VALUES (@Title, @Content, @DateCreated, @ImageUrl, @UserProfileId)";
                     DbUtils.AddParameter(cmd, "@Title", post.Title);
                     DbUtils.AddParameter(cmd, "@Content", post.Caption);
-                    DbUtils.AddParameter(cmd, "@DateCreated", post.DateCreated);
+                    DbUtils.AddParameter(cmd, "@DateCreated", DateTime.Now);
                     DbUtils.AddParameter(cmd, "@ImageUrl", post.ImageUrl);
                     DbUtils.AddParameter(cmd, "@UserProfileId", post.UserProfileId);
                     post.Id = (int)cmd.ExecuteScalar();
@@ -123,13 +123,13 @@ namespace CreativeU.Repositories
                         UPDATE Post
                            SET Title = @Title,
                                Content = @Caption,
-                               CreateDateTime = @DateCreated,
+                            
                                ImageLocation = @ImageUrl,
                                UserProfileId = @UserProfileId
                          WHERE Id = @Id";
                     DbUtils.AddParameter(cmd, "@Title", post.Title);
                     DbUtils.AddParameter(cmd, "@Caption", post.Caption);
-                    DbUtils.AddParameter(cmd, "@DateCreated", post.DateCreated);
+                  
                     DbUtils.AddParameter(cmd, "@ImageUrl", post.ImageUrl);
                     DbUtils.AddParameter(cmd, "@UserProfileId", post.UserProfileId);
                     DbUtils.AddParameter(cmd, "@Id", post.Id);

@@ -20,3 +20,18 @@ export const getAllPosts = () => {
       body: JSON.stringify(singlePost),
     });
   };
+
+  export const editPost = (postObj) => {
+    return fetch(`${baseUrl}/${postObj.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(postObj)
+    })
+}
+export const deletePost = (postId) => {
+  return fetch(`${baseUrl}/${postId}`, {
+      method: "DELETE"
+  })
+}

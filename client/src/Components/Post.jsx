@@ -1,11 +1,14 @@
 import { Card, CardImg, CardBody, ListGroup, ListGroupItem } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { deletePost } from "../services/PostService";
+import { editPost } from "../services/PostService";
+import './Post.css';
 
 
 export const Post = ({ post }) => {
 
     const userProfileId = JSON.parse(localStorage.getItem("userProfile")).id;
-
+    let navigate = useNavigate();
   return (
     
     <Card className="m-4">
@@ -16,11 +19,12 @@ export const Post = ({ post }) => {
       <CardBody>
         <p>
           <Link to={`/posts/${post.id}`}>
-          <strong>{post.title}</strong>
+          <strong className="gray-title">{post.title}</strong>
           </Link>
         </p>
         <p>{post.content}</p>
-        {post.userProfileId == userProfileId ? <><button>Edit</button> <button>Delete</button></> : ""}
+        {post.userProfileId == userProfileId ? <><button onClick={() => {navigate(`/posts/edit/${post.id}`)}}>Edit</button> <button onClick={() => {deletePost(post.id).then(() => {navigate("/posts")})}}>Delete</button></> : ""}
+
     </CardBody>
     </Card>
   );

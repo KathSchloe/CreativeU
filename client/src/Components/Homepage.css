@@ -1,0 +1,29 @@
+.homepage {
+    background-image: url('https://marketplace.canva.com/EAFnSII2R7Y/1/0/1600w/canva-beige-neutral-aesthetic-photo-collage-desktop-wallpaper-oU0FWVwdSYg.jpg'); /* your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Make sure it covers the full height */
+    width: 212vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure the pseudo-element overlay works */
+}
+
+/* Homepage.css */
+h1 {
+    color: #5c5b5b; /* Dark gray color for the h1 */
+    font-family: 'Domine', serif;
+}
+
+.navbar {
+    
+    color: #5c5b5b; /* Text color in the navbar, change as needed */
+}
+
+/* If the navbar has links, you might want to style them too */
+.navbar a {
+    color: #5c5b5b; /* Link color in the navbar */
+}
+

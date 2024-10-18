@@ -22,3 +22,4 @@ export const login = (userObject) => {
   export const logout = () => {
         localStorage.clear()
   };
+  
