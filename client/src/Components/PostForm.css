@@ -14,6 +14,8 @@ h1 {
 .navbar {
   background-color: rgb(255, 255, 255);
   color: #5c5b5b; /* Text color in the navbar, change as needed */
+  position: relative; /* Allow z-index to work */
+    z-index: 10; /* Set a high z-index */
 }
 
 /* If the navbar has links, you might want to style them too */
@@ -22,6 +24,14 @@ h1 {
   color: #5c5b5b; /* Link color in the navbar */
   font-family: 'Domine', serif;
 }
+
+.posts-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  background-image: url('https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg');
+  background-size: cover; /* Adjust to cover the entire navbar */
+  color: #5c5b5b; /* Text color */
+}
+
 
 body {
     font-family: 'Arial', sans-serif; /* Use a clear, readable font */
@@ -77,3 +87,25 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
+  .small-image {
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Keeps the aspect ratio */
+    max-width: 150px; /* Set your desired max width */
+    max-height: 150px;
+    margin-right: 10px; /* Space between image and caption */
+}
+
+.caption {
+  display: flex; /* Use flexbox for layout */
+  align-items: top; /* Center items vertically */
+}
+
+.caption-text {
+  margin-left: 10px; /* Space between image and caption text */
+  flex: 1; /* Allow the caption text to take remaining space */
+}
+
+.small-image {
+  width: 100px; /* Adjust width as necessary */
+  height: auto; /* Maintain aspect ratio */
+}

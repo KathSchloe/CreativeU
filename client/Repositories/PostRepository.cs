@@ -19,7 +19,7 @@ namespace CreativeU.Repositories
                 using (var cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"
-                SELECT p.Id AS PostId, p.Title, p.imageLocation, p.Content, p.CreateDateTime AS PostDateCreated,
+                SELECT p.Id AS PostId, p.Title, p.ImageLocation, p.Content, p.CreateDateTime AS PostDateCreated,
                         p.UserProfileId,
                         up.Email, up.DisplayName as Name, up.CreateDateTime AS UserProfileDateCreated
                   FROM Post p
@@ -33,6 +33,7 @@ namespace CreativeU.Repositories
                         {
                             Id = DbUtils.GetInt(reader, "PostId"),
                             Title = DbUtils.GetString(reader, "Title"),
+                            ImageUrl = DbUtils.GetString(reader, "ImageLocation"),
                             Caption = DbUtils.GetString(reader, "Content"),
                             DateCreated = DbUtils.GetDateTime(reader, "PostDateCreated"),
                             UserProfileId = DbUtils.GetInt(reader, "UserProfileId"),
