@@ -25,10 +25,10 @@ VALUES
 -- Seed Post
 INSERT INTO [Post] ([Title], [Content], [ImageLocation], [CreateDateTime], [PublishDateTime], [IsApproved], [CategoryId], [UserProfileId])
 VALUES
-  ('Baking', 'This post is all about baking! Here are some resources to get you started.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0J-znN5s-N7DsWW6B827aknUpk8J6sehbxw&s', GETDATE(), GETDATE(), 1, 1, 2),
-  ('Crochet', 'Crochet is a lifestyle.', 'https://images.squarespace-cdn.com/content/v1/62adb25086a91b0f0f372f8b/2fbe24a4-efa2-43bf-8699-cf9377b7b427/IMG_3600+3.jpg', GETDATE(), GETDATE(), 1, 2, 3),
-  ('Stained glass', 'Listed below are all the supplies you ', 'https://linebaughstudios.com/cdn/shop/files/IMG_9393.jpg?v=1719506998', GETDATE(), GETDATE(), 1, 4, 2),
-  ('Bookbinding', 'Bookbinding is a very time consuming yet rewarding hobby!', 'https://m.media-amazon.com/images/I/61MAInWvyKL._AC_UF1000,1000_QL80_.jpg', GETDATE(), GETDATE(), 1, 5, 3);
+  ('Baking', 'This post is all about baking! Baking might be the hobby for you if you have a sweet tooth. You can find all kinds of free baking recipes online! Yum!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0J-znN5s-N7DsWW6B827aknUpk8J6sehbxw&s', GETDATE(), GETDATE(), 1, 1, 2),
+  ('Crochet', 'Crochet is such a great cozy hobby for the colder months! Here is the link to one of my favorite videos for easy crochet projects for beginners: https://youtu.be/Xt8Oxs8MZw0?si=SjDNGtDrGC1gQKgB', 'https://images.squarespace-cdn.com/content/v1/62adb25086a91b0f0f372f8b/2fbe24a4-efa2-43bf-8699-cf9377b7b427/IMG_3600+3.jpg', GETDATE(), GETDATE(), 1, 2, 3),
+  ('Stained glass', 'Srained glass is a very rewarding hobby! Here is a great resource for beginners: https://www.thehandmadehome.net/stained-glass-getting-started/', 'https://linebaughstudios.com/cdn/shop/files/IMG_9393.jpg?v=1719506998', GETDATE(), GETDATE(), 1, 4, 2),
+  ('Bookbinding', 'Bookbinding is a very time consuming yet rewarding hobby! You can bind books using recycled and secondhand materials.', 'https://m.media-amazon.com/images/I/61MAInWvyKL._AC_UF1000,1000_QL80_.jpg', GETDATE(), GETDATE(), 1, 5, 3);
 
 -- Seed Comment
 INSERT INTO [Comment] ([PostId], [UserProfileId], [Subject], [Content], [CreateDateTime])
@@ -43,3 +43,5 @@ INSERT INTO [Subscription] ([SubscriberUserProfileId], [ProviderUserProfileId], 
 VALUES
   (4, 2, GETDATE(), DATEADD(year, 1, GETDATE())), -- Subscriber One subscribes to John Doe
   (4, 3, GETDATE(), DATEADD(year, 1, GETDATE())); -- Subscriber One subscribes to Jane Smitha
+
+  select * from post
