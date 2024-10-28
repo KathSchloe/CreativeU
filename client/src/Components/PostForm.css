@@ -1,6 +1,6 @@
 /* THIS CSS FILE IS ACTUALLY FOR POSTLIST.JSX!!!!! */
 .postform {
-  background-image: url('https://i.etsystatic.com/5618592/r/il/cbc398/4904703460/il_fullxfull.4904703460_dj73.jpg');
+  background-image: url('');
   width: 220vh;
 
 }
@@ -13,7 +13,7 @@ h1 {
 
 .navbar {
   background-color: rgb(255, 255, 255);
-  color: #5c5b5b; /* Text color in the navbar, change as needed */
+  color: #d8d8d8; /* Text color in the navbar, change as needed */
   position: relative; /* Allow z-index to work */
     z-index: 10; /* Set a high z-index */
 }
@@ -21,13 +21,13 @@ h1 {
 /* If the navbar has links, you might want to style them too */
 .navbar a {
   
-  color: #5c5b5b; /* Link color in the navbar */
+  color: #cfcfcf; /* Link color in the navbar */
   font-family: 'Domine', serif;
 }
 
 .posts-navbar {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  background-image: url('https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp10023104.jpg');
   background-size: cover; /* Adjust to cover the entire navbar */
   color: #5c5b5b; /* Text color */
 }
@@ -109,3 +109,6 @@ body {
   width: 100px; /* Adjust width as necessary */
   height: auto; /* Maintain aspect ratio */
 }
+
+
+/* https://i.etsystatic.com/5618592/r/il/cbc398/4904703460/il_fullxfull.4904703460_dj73.jpg */
