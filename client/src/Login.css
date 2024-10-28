@@ -6,16 +6,67 @@
 }
 
 .auth-button{
-    background-color:  #506d45;
+    background-color:  #928e84;
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    
 }
 
 .register-link{
     color:  #506d45;
+    
 }
 
 .auth-form-input{
     height: 35px;
     padding: 5px;
     border-radius: 5px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #ddd2c4; /* Light background color */
+    padding-left: 650px;
+    padding-right: 650px;
+    color:#6b5f46;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url('https://wallpapers.com/images/hd/cozy-desktop-k6ljncn8jhtksoi4.jpg');
+    background-size:cover;
+}
+
+.login-header {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.login-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 300px;
+}
+
+
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 5px; /* Space below the heading */
+    color: #768a6f; /* Change color to match your theme */
+    font-size: 2rem; /* Adjust font size as needed */
+    
+}
+
+h3 {
+    font-size:medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #9c8c6a;
+    font-weight: bolder;
 }
