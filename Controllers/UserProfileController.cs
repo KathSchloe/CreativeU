@@ -18,6 +18,18 @@ namespace CreativeU.Controllers
         {
             return Ok(_userProfileRepository.GetAll());
         }
+        [HttpGet("GetByEmail")]
+        public IActionResult GetByEmail(string email)
+        {
+            var user = _userProfileRepository.GetByEmail(email);
+
+            if (email == null || user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
