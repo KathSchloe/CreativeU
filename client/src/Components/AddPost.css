@@ -1,33 +1,35 @@
 .container.pt-4 {
-    display: flex;              /* Use Flexbox */
-    justify-content: center;    /* Center horizontally */
-    align-items: center;        /* Center vertically */
-    height: 100vh;             /* Full height of the viewport */
-    padding-left: 500px;
-    font-family: 'Domine', serif;
+  display: flex;              /* Use Flexbox */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  height: 100vh;             /* Full height of the viewport */
+  padding-left: 500px;
+  font-family: 'Domine', serif;
 }
 
 body {
-    background-image: url('https://wallpapercave.com/wp/wp10023104.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp10023104.jpg');
   width: 222vh;
 }
 
-  
-  
-  h1 {
-    color: #5c5b5b; /* Dark gray color for the h1 */
-    font-family: 'Domine', serif;
-  }
-  
-  .navbar {
-    
-    color: #5c5b5b; /* Text color in the navbar, change as needed */
-  }
-  
-  /* If the navbar has links, you might want to style them too */
-  .navbar a {
-    color: #5c5b5b; /* Link color in the navbar */
-    font-family: 'Domine', serif;
-  }
+h1 {
+  color: #5c5b5b; /* Dark gray color for the h1 */
+  font-family: 'Domine', serif;
+}
 
-  /* https://wallpapers.com/images/hd/candles-cameras-and-cars-beige-aesthetic-desktop-cqe0088awdjyzavx.jpg */
+.navbar {
+  color: #5c5b5b; /* Text color in the navbar */
+}
+
+/* Link color in the navbar */
+.navbar a {
+  color: #5c5b5b; /* Link color in the navbar */
+  font-family: 'Domine', serif;
+}
+
+/* New class for a card with fixed width */
+.wide-card {
+  width: 500px;       /* Set a fixed width of 500px */
+  max-width: 100%;    /* Allow it to be responsive on smaller screens */
+}
+
